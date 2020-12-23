@@ -28,12 +28,12 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			background-color: _palette(blak);
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.60;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -42,6 +42,7 @@
 
 		h1 {
 			font-size: 3.25em;
+			font-family: Literata;
 		}
 
 		> .inner {
@@ -95,7 +96,7 @@
 		}
 
 		&.major {
-			height: 75vh;
+			height:100vh;
 			min-height: 30em;
 			max-height: 50em;
 
@@ -104,7 +105,7 @@
 			}
 		}
 
-		&.style1 { &:after { background-color: _palette(accent1); } }
+		&.style1 { &:after { background-color: _palette(blak); } }
 		&.style2 { &:after { background-color: _palette(accent2); } }
 		&.style3 { &:after { background-color: _palette(accent3); } }
 		&.style4 { &:after { background-color: _palette(accent4); } }
@@ -151,7 +152,7 @@
 			}
 
 			&.major {
-				height: auto;
+				height: 100vh;
 				min-height: 0;
 				max-height: none;
 			}
