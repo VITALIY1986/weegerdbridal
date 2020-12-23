@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-
+import Banner1 from '../components/Banner1'
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
@@ -26,8 +26,10 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <Banner />
-
-                <div id="main">
+                <section >  
+                <Banner1 />
+                </section>
+              {/*   <div id="main">
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
@@ -84,7 +86,7 @@ class HomeIndex extends React.Component {
                         </div>
                     </section>
                 </div>
-
+*/}
             </Layout>
         )
     }

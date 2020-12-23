@@ -46,7 +46,7 @@ const Contact = (props) => (
                         Nashville, TN 00000<br />
                         United States of America</span>
                     </div>
-                </section>
+            </section>
             </section>
         </div>
     </section>
