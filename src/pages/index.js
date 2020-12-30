@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from "gatsby"
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import Banner1 from '../components/Banner1'
+import Bo from '../components/shop'
 {/* import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
@@ -28,6 +29,7 @@ class HomeIndex extends React.Component {
                 <Banner />
                 <section >  
                 <Banner1 />
+                <Bo/>
                 </section>
               {/*   <div id="main">
                     <section id="one" className="tiles">
