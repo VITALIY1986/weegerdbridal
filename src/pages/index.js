@@ -4,12 +4,12 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import Banner1 from '../components/Banner1'
-import pic01 from '../assets/images/pic01.jpg'
+{/* import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+import pic06 from '../assets/images/pic06.jpg'*/}
 
 class HomeIndex extends React.Component {
     render() {
