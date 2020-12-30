@@ -1,3 +1,11 @@
+const dotenv = require('dotenv')
+
+if (process.env.NODE_ENV !== 'production'){
+  dotenv.config()
+}
+
+
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter - Forty V2",
@@ -6,6 +14,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,6 +28,33 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+         
+         
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `hmbu9d7d9pms`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`,
   ],
 }
