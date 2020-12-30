@@ -29,6 +29,16 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    
+    
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `hmbu9d7d9pms`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -46,15 +56,5 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `hmbu9d7d9pms`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
-    },
-    `@contentful/gatsby-transformer-contentful-richtext`,
   ],
 }
