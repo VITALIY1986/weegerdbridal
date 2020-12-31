@@ -2,8 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
-
+import Layout from "../components/layoutq"
+import SEO from "../components/seo"
 
 class BlogPostContenfulTemplate extends React.Component {
   render(){
@@ -12,8 +12,12 @@ class BlogPostContenfulTemplate extends React.Component {
   const { previous, next } = this.props.pageContext
 
   return (
+   
     <Layout location={this.props.location} title ={siteTitle}>
-     
+       <SEO
+        title={post.title}
+       
+      />
       <Img fluid={post.image.fluid}/>
       <article
         className="blog-post"
@@ -55,7 +59,7 @@ class BlogPostContenfulTemplate extends React.Component {
           </li>
         </ul>
       </nav>
-    </Layout>
+      </Layout>
   )
 }
 }

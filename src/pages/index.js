@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link, graphql } from "gatsby"
-import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
+
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import Banner1 from '../components/Banner1'
 import Bo from '../components/shop'
+import SEO from '../components/seo'
+{/*import Img from "gatsby-image"*/}
 {/* import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
@@ -14,21 +16,20 @@ import pic06 from '../assets/images/pic06.jpg'*/}
 
 class HomeIndex extends React.Component {
     render() {
-
+        const {data} = this.props
+     
+      {/*  const posts = data.contentfulHero*/}
+        const siteTitle = data.site.siteMetadata.title 
         return (
-            <Layout>
-                <Helmet
-                    title="Свадебные платья Киев"
-                    meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
-                    ]}
-                >
-                </Helmet>
+            <Layout location={this.props.location} title={siteTitle}>
+                
+                <SEO title="All posts" />
 
                 <Banner />
+               {/* <Img fluid={posts.heroImg.fluid}/>*/}
                 <section >  
                 <Banner1 />
+                
                 <Bo/>
                 </section>
               {/*   <div id="main">
@@ -95,3 +96,20 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+export const pageQuery = graphql`
+  query {
+    site {
+        siteMetadata {
+          title
+        }
+      }
+    
+    contentfulHero {
+        heroImg {
+          fluid{
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+  }
+`

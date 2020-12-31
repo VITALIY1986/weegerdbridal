@@ -3,7 +3,7 @@
 
 import React from "react"
 import { useStaticQuery,Link, graphql } from "gatsby"
-import Layout from './layout'
+import Layout from './layoutq'
 import Img from "gatsby-image"
 const Rer = () => {
   const data = useStaticQuery(graphql`{

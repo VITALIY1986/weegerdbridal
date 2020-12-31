@@ -1,7 +1,23 @@
 import React from 'react'
-
-const Banner = (props) => (
-    <section id="banner_logo" className="major">
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+const Banner = (props) => {
+    const data = useStaticQuery(graphql`{
+        contentfulHero {
+          heroImg {
+            fluid{
+              ...GatsbyContentfulFluid
+            }
+          }
+        }
+    }
+      `)
+      const soc = data.contentfulHero
+      return(
+    <section id="banner_logo" className="major" >
+        <Img
+         fluid={soc.heroImg.fluid}
+         />
         <div className="inner">
             <header className="major">
                 <h1>Свадебные пплатья Киев</h1>
@@ -15,6 +31,12 @@ const Banner = (props) => (
             </div>
         </div>
     </section>
-)
+      )
+}
 
 export default Banner
+
+
+
+
+
