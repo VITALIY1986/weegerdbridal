@@ -25,7 +25,7 @@ const Rer = () => {
                      <Img
          fluid={soc.heroImg.fluid}
          />
-         <p>dsfgsdfs</p>
+        
                 </section>
     </div>
   )

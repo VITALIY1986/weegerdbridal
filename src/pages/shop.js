@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Bo from "../components/rer"
-import Layout from "../components/layoutq"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogIndex extends React.Component {
@@ -35,16 +35,10 @@ class BlogIndex extends React.Component {
                 <section>
                 <Img fluid={node. catalogImg.fluid}/>
                 </section>
-                  <h2>
-                    <Link to={node.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
+                  
                   
                 </header>
-                <section>
-                  <p>{node.subtitle}</p>
-                </section>
+               
                
               </article>
             </li>

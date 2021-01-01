@@ -10,10 +10,16 @@ display: flex;
 }
 
 ul.shop {
-display: flex;
-flex-wrap: wrap;
-    li{
-        width:33.333%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 10;
+    width: 100%;
+    li{ margin: 5px;
+        padding: 0;
+        width: 32.333%;
     }
 }
 @include breakpoint(small) {
