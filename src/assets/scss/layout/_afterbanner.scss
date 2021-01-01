@@ -16,3 +16,14 @@ flex-wrap: wrap;
         width:33.333%;
     }
 }
+@include breakpoint(small) {
+
+    ul.shop {
+        display: flex;
+        flex-wrap: wrap;
+            li{
+                width:100%;
+            }
+        }
+
+}
