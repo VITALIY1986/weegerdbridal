@@ -57,7 +57,7 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
-         
+          `@contentful/gatsby-transformer-contentful-richtext`
         ],
       },
     },

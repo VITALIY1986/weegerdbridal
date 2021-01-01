@@ -14,7 +14,7 @@ const Banner = (props) => {
       `)
       const soc = data.contentfulHero
       return(
-    <section id="banner_logo" className="major" >
+    <section id="banner_logo" className="major"  >
         <Img
          fluid={soc.heroImg.fluid}
          />

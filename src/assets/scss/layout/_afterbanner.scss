@@ -8,3 +8,11 @@
 ol{
 display: flex;	
 }
+
+ul.shop {
+display: flex;
+flex-wrap: wrap;
+    li{
+        width:33.333%;
+    }
+}
