@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Bo from "../components/rer"
-import Layout from "../components/layout"
+import Layout from "../components/layoutq"
 import SEO from "../components/seo"
 
 class BlogIndex extends React.Component {

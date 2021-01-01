@@ -11,7 +11,7 @@ class Layout extends React.Component {
         super(props)
         this.state = {
             isMenuVisible: false,
-            loading: 'is-loading'
+            
         }
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
