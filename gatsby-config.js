@@ -24,10 +24,18 @@ module.exports = {
   {
     resolve: `gatsby-plugin-react-helmet-canonical-urls`,
     options: {
-      siteUrl: `http://www.svadebnyye-platya.kiev.ua/`,
+      siteUrl: `http://www.svadebnyye-platya.kiev.ua`,
     },
   },
-  
+  `gatsby-plugin-sitemap`,
+  {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'http://www.svadebnyye-platya.kiev.ua',
+      sitemap: 'http://www.svadebnyye-platya.kiev.ua/sitemap.xml',
+      policy: [{ userAgent: '*', allow: '/' }]
+    }
+  },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
