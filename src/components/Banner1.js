@@ -20,11 +20,10 @@ const Banner = (props) => {
          />
         <div className="inner">
             <header className="major">
-                <h2>Свадебные пплатья Киев</h2>
+                <h2>Свадебная коллекция "Free"</h2>
                  </header>
             <div className="content">
-                <p>A responsive site template designed by HTML5 UP<br />
-                and released under the Creative Commons.</p>
+                <p>Легкие, елегантные платья которые подчеркивают особенность фигуры каждой невесты</p>
                 <ul className="actions">
                     <li><a href="#one" className="button next scrolly">Get Started</a></li>
                 </ul>
