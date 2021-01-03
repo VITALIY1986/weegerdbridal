@@ -44,7 +44,7 @@ const Rer = () => {
     <Layout >
      
      
-    <ol style={{ listStyle: `none` }}>
+   {/* <ol style={{ listStyle: `none` }}>
       {posts.map(({node}) => {
         const title = node.title || node.slug
 
@@ -74,7 +74,7 @@ const Rer = () => {
           </li>
         )
       })}
-    </ol>
+    </ol>*/}
     <section className="wedContent">
         <div >
             <header >
