@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        siteUrl: `http://www.svadebnyye-platya.kiev.ua`
+        siteUrl: `http://www.svadebnyye-platya.kiev.ua`,
         name: 'Свадебные платья КИЕВ',
         short_name: 'Falice Bride',
         start_url: '/',
