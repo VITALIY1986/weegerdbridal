@@ -31,6 +31,7 @@ class HomeIndex extends React.Component {
                 <Banner1 />
                 
                 <Bo/>
+               
                 </section>
               {/*   <div id="main">
                     <section id="one" className="tiles">
