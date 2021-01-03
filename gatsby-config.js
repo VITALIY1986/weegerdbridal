@@ -8,12 +8,12 @@ if (process.env.NODE_ENV !== 'production'){
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Свадебные платья Киев`,
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Широкий выбор свадебных платьев в Киеве, большой модельный ряд, гибкие цены`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
       twitter: `kylemathews`,

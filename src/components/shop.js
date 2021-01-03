@@ -75,6 +75,17 @@ const Rer = () => {
         )
       })}
     </ol>
+    <section className="wedContent">
+        <div >
+            <header >
+                <h1>Свадебная платья в Киеве</h1>
+            </header>
+            <div >
+                <p>Предлагаем вашему вниманию новая коллекция свадебных платьев "London"</p>
+               
+            </div>
+        </div>
+    </section>
   </Layout>
     
   )
