@@ -22,7 +22,7 @@ const Rer = () => {
   const doc = data.contentfulRichContent.content.childContentfulRichText
 
   return (
-    <div className="bio">
+    <div className="contentAbout">
                      <section>
                     
         <div dangerouslySetInnerHTML={{__html:doc.html}}/>
