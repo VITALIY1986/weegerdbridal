@@ -8,10 +8,10 @@ if (process.env.NODE_ENV !== 'production'){
 
 module.exports = {
   siteMetadata: {
-    title: `Свадебные платья Киев`,
+    title: `цены,фото`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Falice Bride`,
+      summary: `who lives and works in San Francisco `,
     },
     description: `Широкий выбор свадебных платьев в Киеве, большой модельный ряд, гибкие цены`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Свадебные платья КИЕВ',
+        short_name: 'Falice Bride',
         start_url: '/',
         background_color: '#000000',
         theme_color: '#000000',
