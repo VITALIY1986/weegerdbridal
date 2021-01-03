@@ -20,7 +20,13 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
+  {
+    resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+    options: {
+      siteUrl: `https://www.example.com`,
+    },
+  },
   
     {
       resolve: `gatsby-plugin-manifest`,
@@ -35,10 +41,7 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png',
         // This path is relative to the root of the site.
       },
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-    options: {
-      siteUrl: `http://www.svadebnyye-platya.kiev.ua`, 
-    },
+     
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
