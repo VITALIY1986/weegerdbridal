@@ -56,9 +56,9 @@ const Rer = () => {
               itemType="http://schema.org/Article"
             >
               <header>
-              <section>
+              <figure>
               <Img fluid={node.image.fluid}/>
-              </section>
+              </figure>
                 <h2>
                   <Link to={node.slug} itemProp="url">
                     <span itemProp="headline">{title}</span>

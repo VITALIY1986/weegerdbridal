@@ -20,7 +20,7 @@ const Banner = (props) => {
          />
         <div className="inner">
             <header className="major">
-                <h1>Свадебные пплатья Киев</h1>
+                <h2>Свадебные пплатья Киев</h2>
                  </header>
             <div className="content">
                 <p>A responsive site template designed by HTML5 UP<br />

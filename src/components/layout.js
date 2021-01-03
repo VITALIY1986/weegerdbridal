@@ -20,7 +20,7 @@ class Layout extends React.Component {
     componentDidMount () {
         this.timeoutId = setTimeout(() => {
             this.setState({loading: ''});
-        }, 300);
+        }, 0.1);
     }
 
     componentWillUnmount () {
