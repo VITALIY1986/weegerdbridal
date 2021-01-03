@@ -24,7 +24,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-react-helmet-canonical-urls`,
     options: {
-      siteUrl: `https://www.example.com`,
+      siteUrl: `http://www.svadebnyye-platya.kiev.ua`,
     },
   },
   
