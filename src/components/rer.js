@@ -21,14 +21,20 @@ const Rer = () => {
 
 
   return (
-    <div className="bio">
-                     <section>
-                     <Img
-         fluid={soc.heroImg.fluid}
-         />
-       
-                </section>
+    <section id="bannerСatalog" className="major"  >
+    <Img
+     fluid={soc.heroImg.fluid}
+     />
+    <div className="inner">
+        <header className="major">
+            <h2>Свадебная коллекция "London"</h2>
+             </header>
+        <div className="content">
+            <p>Непривзойденный стиль</p>
+            
+        </div>
     </div>
+</section>
   )
 }
 
