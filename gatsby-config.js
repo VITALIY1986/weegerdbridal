@@ -56,12 +56,14 @@ module.exports = {
     
     
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        spaceId: `hmbu9d7d9pms`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `t_n5VeZ5DmQewST7Mpo_5VF8NMgMFKiW_WcE0TTMzQo`
-      }
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-823EBHRLK6", // Google Analytics / GA
+       // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
