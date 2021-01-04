@@ -73,10 +73,7 @@ const SEO = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: `google-site-verification`,
-          content: `3us1B9kdeNIyFI8ycaB7ughGFve3AVmIoo6hwgd2ihs`,
-        },
+       
       ].concat(meta)}
     />
   )
@@ -84,7 +81,10 @@ const SEO = ({ description, lang, meta, title }) => {
 
 SEO.defaultProps = {
   lang: `ru`,
-  meta: [],
+  meta: [ {
+    name: `google-site-verification`,
+    content: `3us1B9kdeNIyFI8ycaB7ughGFve3AVmIoo6hwgd2ihs`,
+  },],
   description: ``,
 }
 
