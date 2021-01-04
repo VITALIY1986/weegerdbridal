@@ -32,12 +32,18 @@ const SEO = ({ description, lang, meta, title }) => {
 
   return (
     <Helmet
+    
       htmlAttributes={{
         lang,
       }}
+      
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
+        {
+          name: `google-site-verification`,
+          content: `3us1B9kdeNIyFI8ycaB7ughGFve3AVmIoo6hwgd2ihs`,
+        },
         {
           name: `description`,
           content: metaDescription,
