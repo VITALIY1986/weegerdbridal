@@ -30,7 +30,7 @@ const Rer = () => {
             <h2>Свадебная коллекция "London"</h2>
              </header>
         <div className="content">
-            <p>Непривзойденный стиль</p>
+            <p>Непревзойденный стиль</p>
             
         </div>
     </div>
