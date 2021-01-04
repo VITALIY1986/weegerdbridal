@@ -14,7 +14,7 @@ module.exports = {
       summary: `who lives and works in San Francisco `,
     },
     description: `Широкий выбор свадебных платьев в Киеве, большой модельный ряд, гибкие цены`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `http://www.svadebnyye-platya.kiev.ua/`,
     social: {
       twitter: `kylemathews`,
     },
