@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
                 <Img fluid={node.catalogImg.fluid}/>
                 </figure>
               
-                  
+                 <p>{node.title}</p> 
              
                
                
