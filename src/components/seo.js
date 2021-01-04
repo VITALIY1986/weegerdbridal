@@ -40,10 +40,7 @@ const SEO = ({ description, lang, meta, title }) => {
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
-        {
-          name: `google-site-verification`,
-          content: `3us1B9kdeNIyFI8ycaB7ughGFve3AVmIoo6hwgd2ihs`,
-        },
+      
         {
           name: `description`,
           content: metaDescription,
@@ -75,6 +72,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `google-site-verification`,
+          content: `3us1B9kdeNIyFI8ycaB7ughGFve3AVmIoo6hwgd2ihs`,
         },
       ].concat(meta)}
     />
