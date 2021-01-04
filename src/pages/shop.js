@@ -19,28 +19,23 @@ class BlogIndex extends React.Component {
       <SEO title="Коллекция свадебных платьев" />
 
       <Bo />
-      <div class="container">
+      <div class="containerCatalog">
       <ul class="shop "style={{ listStyle: `none` }}>
         {posts.map(({node}) => {
           const title = node.title || node.slug
 
           return (
             <li key={node.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                <section>
-                <Img fluid={node. catalogImg.fluid}/>
-                </section>
+            
+                <figure className="dressCatalog">
+                <Img fluid={node.catalogImg.fluid}/>
+                </figure>
+              
                   
-                  
-                </header>
+             
                
                
-              </article>
+         
             </li>
           )
         })}

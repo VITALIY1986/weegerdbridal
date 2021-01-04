@@ -8,29 +8,46 @@
 ol{
 display: flex;	
 }
-
+.catalogWrapper {
+    background-color: rgb(94, 94, 94);
+}
+.containerCatalog{
+    margin: 3em 0em;
 ul.shop {
+    margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    grid-gap: 25px;
+    justify-items: center;
     justify-content: center;
-    
-    width: 10;
-    width: 100%;
-    li{ margin: 5px;
-        padding: 0;
-        width: 32.333%;
+    font-family: var(--product-font);
+    li{ padding: 0;
+        position: relative;
+        background: #fff;
+        max-width: 360px;
+        width: 100%;
+        height: 610px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        transition: 0.3s box-shadow;
+        .dressCatalog .gatsby-image-wrapper{
+            height: calc(100% - 70px);
+         img {
+                margin: 0 auto;
+                height: 100%;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+}
+
+        }
     }
 }
 @include breakpoint(small) {
 
-    ul.shop {
-        display: flex;
-        flex-wrap: wrap;
-            li{
-                width:100%;
-            }
-        }
+   
 
 }
 .wedContent{
