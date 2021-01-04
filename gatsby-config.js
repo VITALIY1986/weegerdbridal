@@ -56,14 +56,12 @@ module.exports = {
     
     
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-823EBHRLK6", // Google Analytics / GA
-       // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-      },
+        spaceId: `hmbu9d7d9pms`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `t_n5VeZ5DmQewST7Mpo_5VF8NMgMFKiW_WcE0TTMzQo`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -82,6 +80,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-823EBHRLK6", // Google Analytics / GA
+        
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
