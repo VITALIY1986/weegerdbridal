@@ -4,10 +4,10 @@ const Banner = (props) => (
     <section id="banner" className="major">
         <div className="inner">
             <header className="major">
-                <h1>Свадебные платья Киев</h1>
+                <h2>Новая коллекция свадебных платьев 2021</h2>
             </header>
             <div className="content">
-                <p>Новая потрясающая коллекция свадебных платьев 2021 от Falice Bride</p>
+                <p>Falice Bride - это невероятная красота</p>
                 <ul className="actions">
                     <li><a href="/shop" className="button next scrolly">Get Started</a></li>
                 </ul>

@@ -10,7 +10,7 @@ const Banner = (props) => {
                 <h2>Свадебная коллекция "Free"</h2>
                  </header>
             <div className="content">
-                <p>Легкие, елегантные платья которые подчеркивают особенность фигуры каждой невесты</p>
+                <p>Безупречность красоты</p>
                 <ul className="actions">
                     <li><a href="#one" className="button next scrolly">Get Started</a></li>
                 </ul>

@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production'){
 
 module.exports = {
   siteMetadata: {
-    title: `цены,фото`,
+    title: `Купить свадебное платье - фото, цены`,
     author: {
       name: `Falice Bride`,
       summary: `who lives and works in San Francisco `,

@@ -1,4 +1,4 @@
-import React from 'react'
+{/*import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
@@ -81,4 +81,4 @@ const Landing = (props) => (
     </Layout>
 )
 
-export default Landing
+export default Landing */}
