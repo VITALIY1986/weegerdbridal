@@ -7,11 +7,10 @@ const Banner = (props) => (
                 <h2>Новая коллекция свадебных платьев 2021</h2>
             </header>
             <div className="content">
-<<<<<<< HEAD
-                <p>Непревзойденный стиль</p>
-=======
-                <p>Falice Bride - это невероятная красота</p>
->>>>>>> adbc4b0ee1534af06c752f6615b9c98fbcef66e9
+
+             
+      <p>Falice Bride - это непревзойденный стиль</p>
+
                 <ul className="actions">
                     <li><a href="/shop" className="button next scrolly">Get Started</a></li>
                 </ul>
