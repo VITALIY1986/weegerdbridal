@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
 
   return (
     <Layout location={this.props.location} title={siteTitle}>
-      <SEO title="Коллекция свадебных платьев" />
+      <SEO title="Киев" />
 
       <Bo />
       <div class="containerCatalog">
